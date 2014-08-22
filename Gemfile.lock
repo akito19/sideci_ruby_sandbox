@@ -66,6 +66,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.3.16)
     octokit (2.7.2)
       sawyer (~> 0.5.2)
     omniauth (1.1.4)
@@ -147,6 +148,7 @@ DEPENDENCIES
   hipchat (~> 1.0.1)
   jbuilder (~> 1.2)
   jquery-rails
+  mysql2
   octokit (~> 2.7.2)
   omniauth (~> 1.1.4)
   rails (= 4.0.2)
