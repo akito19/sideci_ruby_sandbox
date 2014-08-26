@@ -71,7 +71,6 @@ GEM
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
-    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -150,7 +149,6 @@ DEPENDENCIES
   jquery-rails
   octokit (~> 2.7.2)
   omniauth (~> 1.1.4)
-  pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
