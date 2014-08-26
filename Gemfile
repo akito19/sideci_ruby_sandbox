@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -30,9 +30,6 @@ gem 'jbuilder', '~> 1.2'
 gem "sidekiq", "~> 2.17.6"
 gem "hipchat", "~> 1.0.1"
 gem "omniauth", "~> 1.1.4"
-
-# gem "mysql2"
-gem 'pg'
 
 group :development, :test do
   # gem 'rspec-rails', '~> 3.0.0'
@@ -65,6 +62,3 @@ end
 
 # octokit
 gem 'octokit', '~> 2.7.2'
-#hello
-#hoge
-#foo
