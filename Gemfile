@@ -67,3 +67,4 @@ end
 gem 'octokit', '~> 2.7.2'
 #hello
 #hoge
+#foo
