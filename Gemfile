@@ -62,6 +62,11 @@ end
 
 # octokit
 gem 'octokit', '~> 2.7.2'
+<<<<<<< HEAD
 #hello
 #foobar
 #foobar
+=======
+# comment
+>>>>>>> cf7946ccbcf20e6d43497a9c2a5e2961a293e5f2
+#hello
