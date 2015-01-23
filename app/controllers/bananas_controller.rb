@@ -13,9 +13,9 @@ class BananasController < ApplicationController
       break
     end
 
-    if User.exists?(params[:user])
-      test = User.first(:conditions => ("username = '#{params[:user]}'"))
-    end
+    # if User.exists?(params[:user])
+    #  test = User.first(:conditions => ("username = '#{params[:user]}'"))
+    # end
 
     @banana = Banana.order(created_at: params[:order_by_created_at].to_sym)
   end
