@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
   end
   def index4
   end
+  def index5
+  end
   def index
   end
   def tetete
