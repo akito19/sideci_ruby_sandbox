@@ -106,4 +106,11 @@ class BananasController < ApplicationController
       return false
     end
 
+    #bad patern method
+  def badName
+    if something
+      test
+    end
+  end
+
 end
