@@ -5,4 +5,5 @@
 object = {
   spacing: true,
   spacing: true,
+  spacing: true,
 }
