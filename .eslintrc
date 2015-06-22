@@ -1,10 +1,11 @@
 {
-    "ecmaFeatures": {
-        "blockBindings": true,
-        "forOf": true,
-        "jsx": true
-    },
+  "ecmaFeatures": {
+    "blockBindings": true,
+      "forOf": true,
+      "jsx": true
+  },
     "rules": {
-        "no-unused-vars": 0
+      "no-unused-vars": 0,
+      "no-undef": 0
     }
 }
