@@ -1,0 +1,9 @@
+linter:
+  rails_best_practices:
+    options:
+      vendor: true
+      spec: true
+      test: true
+      features: true
+      exclude: 'about_controller'
+      only: 'model,controller'
