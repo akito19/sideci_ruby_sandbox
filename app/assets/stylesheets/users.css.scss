@@ -1,0 +1,21 @@
+.foo {
+  color: #000!important;
+}
+
+.bar {
+  color: green;
+}
+
+/* This is invalid comment */
+
+
+h1 {
+  margin: 10px;
+  margin: 0px; // dup
+}
+p {
+  margin: 0px;
+  em {
+    color: #111;
+  }
+}

@@ -27,3 +27,6 @@ dump.rdb
 
 #ruby mine
 .idea/*
+
+# scsslint
+/.sass-cache

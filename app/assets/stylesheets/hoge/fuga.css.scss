@@ -1,0 +1,40 @@
+.cat{}
+
+.dog {
+  color: #ff00ff;
+}
+
+p {
+  background: #ab;
+}
+
+
+span.hoge {
+        padding: 10px;
+}
+
+.piyo {
+  margin: 0.5em;
+}
+
+.piyo {
+  padding: 10px;
+}
+
+.one {
+  .two {
+    .three {
+      .four {
+        .five {
+          .six {
+            height: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.funi {
+  margin: 1px 1px 1px 1px;
+}
