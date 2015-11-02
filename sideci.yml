@@ -6,7 +6,7 @@ linter:
       test: true
       features: true
       exclude: 'about_controller'
-      only: 'model,controller'
-  haml_lint:
+     only: 'model,controller'
+ haml_lint:
     options:
       config: 'haml-lint.default.yml'
