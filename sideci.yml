@@ -1,12 +1,20 @@
 linter:
-  rails_best_practices:
-    options:
-      vendor: true
-      spec: true
-      test: true
-      features: true
-      exclude: 'about_controller'
-      only: 'model,controller'
   haml_lint:
     options:
-      config: 'haml-lint.default.yml'
+      config: 'lint_yml/haml-lint.yml'
+
+  jshint:
+    options:
+      config: 'lint_yml/.jshintrc'
+
+  rubocop:
+    options:
+      config: 'lint_yml/.rubocop.yml'
+
+  coffeelint:
+    options:
+      config: 'lint_yml/coffeelint.json'
+
+  eslint:
+    options:
+      config: 'lint_yml/.eslintrc'
