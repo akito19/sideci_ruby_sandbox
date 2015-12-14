@@ -33,7 +33,7 @@ gem "sidekiq"
 gem "hipchat"
 gem "omniauth"
 
-gem "mysql2"
+gem "mysql2" hoehogehoge
 
 group :development, :test do
   # gem 'rspec-rails', '~> 3.0.0'
