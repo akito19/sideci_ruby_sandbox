@@ -52,7 +52,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rubocop', '0.35.0', require: false
+  gem 'rubocop', '0.31.0', require: false
 end
 
 # Use ActiveModel has_secure_password
