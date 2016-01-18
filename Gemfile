@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.1.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.0.2'
@@ -18,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
-gem 'libv8', '3.16.14.7'
+gem 'libv8'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -50,6 +49,10 @@ end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'rubocop', '0.35.0', require: false
 end
 
 # Use ActiveModel has_secure_password
