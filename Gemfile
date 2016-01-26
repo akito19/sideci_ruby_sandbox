@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.1.5"
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.0.2'
@@ -29,11 +29,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem "sidekiq"
-gem "hipchat"
-gem "omniauth"
+gem 'sidekiq'
+gem 'hipchat'
+gem 'omniauth'
 
-gem "mysql2"
+gem 'mysql2'
 
 group :development, :test do
   # gem 'rspec-rails', '~> 3.0.0'
@@ -66,4 +66,4 @@ end
 
 # octokit
 gem 'octokit', '~> 2.7.2'
-#Blanco
+# Blanco

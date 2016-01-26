@@ -5,18 +5,18 @@ class BananasControllerTest < ActionController::TestCase
     @banana = bananas(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get :index
     assert_response :success
     assert_not_nil assigns(:bananas)
   end
 
-  test "should get new" do
+  test 'should get new' do
     get :new
     assert_response :success
   end
 
-  test "should create banana" do
+  test 'should create banana' do
     assert_difference('Banana.count') do
       post :create, banana: { name: @banana.name, price: @banana.price }
     end
@@ -24,22 +24,22 @@ class BananasControllerTest < ActionController::TestCase
     assert_redirected_to banana_path(assigns(:banana))
   end
 
-  test "should show banana" do
+  test 'should show banana' do
     get :show, id: @banana
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get :edit, id: @banana
     assert_response :success
   end
 
-  test "should update banana" do
+  test 'should update banana' do
     patch :update, id: @banana, banana: { name: @banana.name, price: @banana.price }
     assert_redirected_to banana_path(assigns(:banana))
   end
 
-  test "should destroy banana" do
+  test 'should destroy banana' do
     assert_difference('Banana.count', -1) do
       delete :destroy, id: @banana
     end

@@ -1,10 +1,10 @@
 class HogeController < ActionController::Base
-  #  
-  #  
   #
-  #  
   #
-  
+  #
+  #
+  #
+
   #
   #
   #

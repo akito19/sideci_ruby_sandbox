@@ -1,11 +1,8 @@
 class Bananas2Controller < ApplicationController
-  
-  
-  
   before_action :set_banana, only: [:show, :edit, :update, :destroy]
 
   # GET /bananas
-  # 
+  #
   # GET /bananas.json
   def index
     @bananas = Banana.all
@@ -66,13 +63,14 @@ class Bananas2Controller < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_banana
-      @banana = Banana.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def banana_params
-      params.require(:banana).permit(:name, :price)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_banana
+    @banana = Banana.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def banana_params
+    params.require(:banana).permit(:name, :price)
+  end
 end

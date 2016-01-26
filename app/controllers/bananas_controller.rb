@@ -1,5 +1,4 @@
 class BananasController < ApplicationController
-
   attr_accessor :banana, :lemon
 
   before_action :set_banana, only: [:show, :edit, :update, :destroy]
@@ -9,19 +8,19 @@ class BananasController < ApplicationController
   # GET /bananas.json
   def index
     # Waste Code
-    while true
+    loop do
       break
     end
 
     if User.exists?(params[:user])
-      test = User.first(:conditions => ("username = '#{params[:user]}'"))
+      test = User.first(conditions: "username = '#{params[:user]}'")
       # add security issue line / unused variable
-      test5 = User.first(:conditions => ("username = '#{params[:user]}'"))  
+      test5 = User.first(conditions: "username = '#{params[:user]}'")
       # add security issue line / unused variable
-      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))  
+      test8 = User.first(conditions: "username = '#{params[:user]}'")
       # NOTE: This is waste code, add security issue line / unused variable
-      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))  
-      
+      test8 = User.first(conditions: "username = '#{params[:user]}'")
+
     end
 
     @banana = Banana.order(created_at: params[:order_by_created_at].to_sym)
@@ -30,14 +29,12 @@ class BananasController < ApplicationController
   # GET /bananas/1
   # GET /bananas/1.json
   def show
-    if @banana.blank?
-    p @banana = Banana.new
-    end
+    p @banana = Banana.new if @banana.blank?
     end
 
   # GET /bananas/new
   def new
-    @banana = Banana.new  
+    @banana = Banana.new
   end
 
   # GET /bananas/1/edit
@@ -88,22 +85,22 @@ class BananasController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_banana
-      @banana = Banana.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def banana_params
-      params.require(:banana).permit(:name, :price)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_banana
+    @banana = Banana.find(params[:id])
+  end
 
-    # unused method
-    def get_banana_by_monkey(monkey)
-      monkey.parents.father.first.foods.each do |food|
-        return true if food == "banana"
-      end
-      return false
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def banana_params
+    params.require(:banana).permit(:name, :price)
+  end
 
+  # unused method
+  def get_banana_by_monkey(monkey)
+    monkey.parents.father.first.foods.each do |food|
+      return true if food == 'banana'
+    end
+    false
+  end
 end
