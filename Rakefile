@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 
 Hogehoge::Application.load_tasks
-p 'aa'
+p 'aaaaaaaaaaaaa'
