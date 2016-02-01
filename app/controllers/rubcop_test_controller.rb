@@ -1,4 +1,4 @@
-class RubocopController  < ApplicationController
+class RubocopController < ApplicationController
 	def initialize
 		print "this is so bad patern"
 	end
