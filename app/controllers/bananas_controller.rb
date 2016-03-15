@@ -16,12 +16,12 @@ class BananasController < ApplicationController
     if User.exists?(params[:user])
       test = User.first(:conditions => ("username = '#{params[:user]}'"))
       # add security issue line / unused variable
-      test5 = User.first(:conditions => ("username = '#{params[:user]}'"))  
+      test5 = User.first(:conditions => ("username = '#{params[:user]}'"))
       # add security issue line / unused variable
-      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))  
+      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))
       # NOTE: This is waste code, add security issue line / unused variable
-      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))  
-      
+      test8 = User.first(:conditions => ("username = '#{params[:user]}'"))
+
     end
 
     @banana = Banana.order(created_at: params[:order_by_created_at].to_sym)
@@ -37,7 +37,7 @@ class BananasController < ApplicationController
 
   # GET /bananas/new
   def new
-    @banana = Banana.new  
+    @banana = Banana.new
   end
 
   # GET /bananas/1/edit
@@ -85,6 +85,15 @@ class BananasController < ApplicationController
   end
 
   def pricieng
+    @post         = Post.new(params[:post])
+    @post.user_id = current_user.id
+    @post.save
+  end
+
+  def new_method
+    @post         = Post.new(params[:post])
+    @post.user_id = current_user.id
+    @post.save
   end
 
   private
