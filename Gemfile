@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.1.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.0.2'
@@ -17,8 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
-gem 'libv8', '3.16.14.7'
+# gem 'therubyracer', platforms: :ruby
+# gem 'libv8', '3.16.14.7'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -34,7 +33,7 @@ gem "hipchat"
 gem "omniauth"
 
 gem "mysql2"
-gem 'pg', '>= 0.14.1' # for debug user env
+# gem 'pg', '>= 0.14.1' # for debug user env
 
 group :development, :test do
   # gem 'rspec-rails', '~> 3.0.0'
