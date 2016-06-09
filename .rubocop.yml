@@ -1,10 +1,12 @@
-require: rubocop-rspec
-
 AllCops:
   Exclude:
     - 'vendor/**/*'
-  RunRailsCops: true
+    - 'db/schema.rb'
   DisplayCopNames: true
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
 
 Style/AccessModifierIndentation:
   Enabled: false
@@ -25,7 +27,7 @@ Style/AlignParameters:
   Enabled: false
 
 Style/AndOr:
-  Enabled: true
+  Enabled: false
 
 Style/ArrayJoin:
   Enabled: false
@@ -51,7 +53,7 @@ Style/BlockComments:
 Style/BlockEndNewline:
   Enabled: false
 
-Style/Blocks:
+Style/BlockDelimiters:
   Enabled: false
 
 Style/BracesAroundHashParameters:
@@ -163,6 +165,9 @@ Style/For:
   Enabled: false
 
 Style/FormatString:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/GlobalVars:
@@ -318,7 +323,7 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Enabled: false
 
 Style/SpaceAfterColon:
@@ -327,7 +332,7 @@ Style/SpaceAfterColon:
 Style/SpaceAfterComma:
   Enabled: false
 
-Style/SpaceAfterControlKeyword:
+Style/SpaceAroundKeyword:
   Enabled: false
 
 Style/SpaceAfterMethodName:
@@ -363,9 +368,6 @@ Style/SpaceAroundEqualsInParameterDefault:
 Style/SpaceAroundOperators:
   Enabled: false
 
-Style/SpaceBeforeModifierKeyword:
-  Enabled: false
-
 Style/SpaceInsideBrackets:
   Enabled: false
 
@@ -390,9 +392,6 @@ Style/StringLiteralsInInterpolation:
 Style/StructInheritance:
   Enabled: false
 
-Style/SymbolLiteral:
-  Enabled: false
-
 Style/SymbolProc:
   Enabled: false
 
@@ -402,7 +401,7 @@ Style/Tab:
 Style/TrailingBlankLines:
   Enabled: false
 
-Style/TrailingComma:
+Style/TrailingCommaInLiteral:
   Enabled: false
 
 Style/TrailingWhitespace:
@@ -445,4 +444,34 @@ Lint/DeprecatedClassMethods:
   Enabled: false
 
 Lint/StringConversionInInterpolation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Rails/Output:
+  Enabled: false
+
+Style/IdenticalConditionalBranches:
   Enabled: false
