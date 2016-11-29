@@ -87,6 +87,12 @@ class BananasController < ApplicationController
   def pricieng
   end
 
+  def banana_trial
+    if @banana.private && @banana.supermarket.trial_end_at.nil?
+      @banana.supermarket.start_trial
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_banana
@@ -106,4 +112,7 @@ class BananasController < ApplicationController
       return false
     end
 
+    def supermarket
+      supermarket = Supermarket.includes(:marche).available.where(food_id: food&.map(&:id)).with_family(family_id)
+    end
 end
