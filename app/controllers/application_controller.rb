@@ -1,5 +1,14 @@
 class ApplicationController < ActionController::Base
   # protect_from_forgery with: :exception
+  CONST_1 = :dummya
+  CONST_2 = :dummyb
+  CONST_3 = :dummyc
+  CONST_4 = :dummyd
+  CONST_5 = :dummye
+  CONST_6 = :dummyf
+  CONST_7 = :dummyg
+  CONST_8 = :dummyh
+
   def index3
     "test"
   end
