@@ -7,6 +7,19 @@ class BananasController < ApplicationController
   # GET /bananas
   #
   # GET /bananas.json
+
+  class Duck
+    class << self
+      def duck_names
+        %i!tick trick track!.each do |surname|
+          %i!duck!.each do |last_name|
+            puts "full name is #{surname} #{last_name}"
+          end
+        end
+      end
+    end
+  end
+
   def index
     # Waste Code
     while true
