@@ -106,4 +106,18 @@ class BananasController < ApplicationController
       return false
     end
 
+  def monkey_chain
+    if tree.nil?
+      false
+    else
+      monkey.family.each do |f|
+        f.father
+        f.mother
+        f.sister
+        f.brother
+        f.brother_in_law
+        f.father.father.mother.grandpa
+      end
+    end
+  end
 end
