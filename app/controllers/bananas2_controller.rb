@@ -4,6 +4,17 @@ class Bananas2Controller < ApplicationController
   
   before_action :set_banana, only: [:show, :edit, :update, :destroy]
 
+  class Duck
+    class << self
+      def duck_names
+        %i!tick trick track!.each do |surname|
+          %i!duck!.each do |last_name|
+            puts "full name is #{surname} #{last_name}"
+          end
+        end
+      end
+    end
+  end
   # GET /bananas
   # 
   # GET /bananas.json
