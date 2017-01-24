@@ -87,6 +87,11 @@ class BananasController < ApplicationController
   def pricieng
   end
 
+  def banana_reduction
+    @fruit = Fruit.find(params[:id])
+    Banana.where(fruit_id: @fruit.id).delete_all
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_banana
