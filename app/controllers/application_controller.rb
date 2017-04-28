@@ -9,6 +9,11 @@ class ApplicationController < ActionController::Base
   end
   def tetete
   end
+  protected
+
+  def hoge; end
+  
+
 private
 
   def waste_action

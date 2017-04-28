@@ -9,4 +9,8 @@ class Banana < ActiveRecord::Base
 
   def buy
   end
+
+  class << self
+
+  end
 end
