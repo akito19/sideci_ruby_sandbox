@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+#sample {
+
+  foo: fixed;
+    color: #0000000000;
+}
