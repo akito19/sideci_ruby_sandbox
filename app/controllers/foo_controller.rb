@@ -8,4 +8,18 @@ class FooController < ActionController::Base
 
     render text: "test"
   end
+  private
+
+   
+  protected
+    def sample(group)
+      group.map {  |v| v.foo.count }
+    end
+ 
+  def hoge
+    %i(une deux troi quattre cinq).each do |num|
+      p "num: #{num}"
+    end
+  end
+ 
 end
