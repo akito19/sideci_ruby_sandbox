@@ -1,9 +1,13 @@
 class BananasController < ApplicationController
 
+
   attr_accessor :banana, :lemon
 
   before_action :set_banana, only: [:show, :edit, :update, :destroy]
 
+  def destroy
+
+  end
   # GET /bananas
   #
   # GET /bananas.json
