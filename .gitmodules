@@ -1,0 +1,3 @@
+[submodule "sideci_rails_sandbox"]
+	path = sideci_rails_sandbox
+	url = git@github.com:actcat/sideci_rails_sandbox.git
